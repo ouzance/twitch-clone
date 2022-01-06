@@ -53,14 +53,25 @@ const SearchIcon = ({ size }) => {
         </svg>
     )
 }
+
+const CollapseIcon = ({ size }) => {
+    return (
+        <svg width={size} height={size} version="1.1" viewBox="0 0 20 20" x="0px" y="0px" >
+            <g>
+                <path d="M16 16V4h2v12h-2zM6 9l2.501-2.5-1.5-1.5-5 5 5 5 1.5-1.5-2.5-2.5h8V9H6z"></path>
+            </g>
+        </svg>
+    )
+}
 const Icon = ({ name, size }) => {
     const icons = {
         more: MoreIcon,
         search: SearchIcon,
-        prime:PrimeIcon,
-        bit:BitIcon,
-        whisper:WhisperIcon,
-        notification:NotificationIcon
+        prime: PrimeIcon,
+        bit: BitIcon,
+        whisper: WhisperIcon,
+        notification: NotificationIcon,
+        collapse:CollapseIcon,
     }
 
     const Component = icons[name]
